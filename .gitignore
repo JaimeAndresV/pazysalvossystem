@@ -1,0 +1,60 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Wamp / Apache
+wamp64/
+*.log
+logs/
+tmp/
+cache/
+vendor/bin/
+
+# PHP / Composer
+/vendor/
+/composer.lock # (opcional: déjalo si tu equipo necesita versiones exactas)
+/.env
+.env.*
+*.env.local
+*.ini
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Otros
+node_modules/
+dist/
+build/
+.DS_Store
+
+# Datos sensibles / dumps
+bd/
+datos.csv
+.env
+.env.*
+*.ini
+
+# Credenciales locales (sube mejor un ejemplo)
+conexion.php
+
+# Logs/temp
+*.log
+logs/
+tmp/
+cache/
+
+# IDE/OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Frontend/otros
+node_modules/
+dist/
+build/
+

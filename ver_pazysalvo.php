@@ -1,13 +1,12 @@
 <?php
+require 'conexion.php';   // ya contiene la conexión y charset
+require 'auth.php';       // verifica que el usuario esté autenticado
+?>
+
+
+<?php
 require('fpdf/fpdf.php');
 
-// Conexión a la base de datos
-$conn = new mysqli('localhost', 'root', '', 'pazysalvo');
-$conn->set_charset("utf8");
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
 
 // Verificar que se recibió el número de documento
 if (isset($_GET['numero_documento'])) {

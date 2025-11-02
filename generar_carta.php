@@ -1,12 +1,12 @@
 <?php
+require 'conexion.php';   // ya contiene la conexión y charset
+require 'auth.php';       // verifica que el usuario esté autenticado
+?>
+
+
+<?php
 require('fpdf/fpdf.php');
 
-// Conexión a la base de datos
-$conn = new mysqli('localhost', 'root', '', 'pazysalvo');
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
 
 // Función para convertir texto a ISO-8859-1
 function convertirTexto($texto) {
